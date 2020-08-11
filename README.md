@@ -9,6 +9,8 @@ Javascript\
 OpenWeather API
 
 ## Links
+Repository: https://github.com/egibbs834/Weather-Dashboard
+Page: https://egibbs834.github.io/Weather-Dashboard/
 
 ## Content Preview
 ![Index Html](content-preview.png)
