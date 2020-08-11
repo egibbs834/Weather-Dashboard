@@ -1,0 +1,33 @@
+body {   
+    font-size: 18px;
+    font-family: 'PT Serif', serif;    
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.forecast {
+    background-color: #02678f;
+    font-size: 14x;
+    color: white;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.btn {
+    font-weight: bold;
+    color: white;
+    background-color: #02678f;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="jumbotron container-fluid text-center" style="background-color:#02678f ;color: white;">
+        <h1>Weather Dashboard</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <h2>Search a City</h2>
+                    <input type="text" class="form-control" id="city-search-field" placeholder="type city name here">
+                    <button class="btn" id="search-button"> Search</button>
+                    <button class="btn" type="button" id="clear-button">Clear</button>
+                    <ul class="list-searched-cities">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-sm-12" id="current-weather">
+                            <h2 class="city-name" id="city-main"></h2>
+                            <p>Temperature: <span class="current" id="temperature"></span></p>
+                            <p>Humidity: <span class="current" id="humidity"></span></p>
+                            <p>Wind Speed: <span class="current" id="wind-speed"></span></p>
+                            <p>UV index: <span class="current" id="uv-index"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="card">
+                    <div class="col-sm-12" id="future-weather">
+                        <h2>5 Day Forecast</h2>
+                        <div class="row">
+                            <div class="col-sm-2 forecast card">
+                                <p id="fiveDayDate0"></p>
+                                <p id="fiveDayIcon0"></p>
+                                <p>Temp: <span id="fiveDayTemp0"></span></p>
+                                <p>Humidity: <span id="fiveDayHumidity0"></span></p>
+                            </div>
+                            <div class="col-sm-2 forecast card">
+                                <p id="fiveDayDate1"></p>
+                                <p id="fiveDayIcon1"></p>
+                                <p>Temp: <span id="fiveDayTemp1"></span></p>
+                                <p>Humidity: <span id="fiveDayHumidity1"></span></p>
+                            </div>
+                            <div class="col-sm-2 forecast card">
+                                <p id="fiveDayDate2"></p>
+                                <p id="fiveDayIcon2"></p>
+                                <p>Temp: <span id="fiveDayTemp2"></span></p>
+                                <p>Humidity: <span id="fiveDayHumidity2"></span></p>
+                            </div>
+                            <div class="col-sm-2 forecast card">
+                                <p id="fiveDayDate3"></p>
+                                <p id="fiveDayIcon3"></p>
+                                <p>Temp: <span id="fiveDayTemp3"></span></p>
+                                <p>Humidity: <span id="fiveDayHumidity3"></span></p>
+                            </div>
+                            <div class="col-sm-2 forecast card">
+                                <p id="fiveDayDate4"></p>
+                                <p id="fiveDayIcon4"></p>
+                                <p>Temp: <span id="fiveDayTemp4"></span></p>
+                                <p>Humidity: <span id="fiveDayHumidity4"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
